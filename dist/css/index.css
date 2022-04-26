@@ -11,7 +11,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background: url(/echarts/img/bg.png) no-repeat;
+    background: url(/dist/img/bg.png) no-repeat;
     margin: 0;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -30,7 +30,7 @@ body {
 .box .top .title .title-bg {
     width: 100%;
     height: 100%;
-    background: url(/echarts/img/top-title-bg.png) no-repeat;
+    background: url(/dist/img/top-title-bg.png) no-repeat;
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
@@ -58,13 +58,13 @@ body {
 }
 
 .nav .item-bg-left {
-    background: url(/echarts/img/item-bg-left.png) no-repeat;
+    background: url(/dist/img/item-bg-left.png) no-repeat;
     margin-right: .3125rem;
     background-size: 100% 100%;
 }
 
 .nav .item-bg-right {
-    background: url(/echarts/img/item-bg-right.png) no-repeat;
+    background: url(/dist/img/item-bg-right.png) no-repeat;
     margin-left: .3125rem;
     background-size: 100% 100%;
 }
@@ -87,13 +87,13 @@ body {
 }
 
 .nav-list .list-item:nth-child(odd) {
-    background: url(/echarts/img/item-bg-odd.png) no-repeat;
+    background: url(/dist/img/item-bg-odd.png) no-repeat;
     background-size: 100% 100%;
 
 }
 
 .nav-list .list-item:nth-child(even) {
-    background: url(/echarts/img/item-bg-even.png) no-repeat;
+    background: url(/dist/img/item-bg-even.png) no-repeat;
     background-size: 100% 100%;
 
 }
@@ -186,14 +186,14 @@ body {
     width: 80%;
     height: 3.4375rem;
     line-height: 3.4375rem;
-    background: url(/echarts/img/right-content-item.png) no-repeat;
+    background: url(/dist/img/right-content-item.png) no-repeat;
     background-size: 100% 100%;
     margin: .625rem auto;
     font-size: .75rem;
 }
 
 .top-left .top-left-content .right-content .right-content-item.active {
-    background: url(/echarts/img/right-content-item-active.png) no-repeat;
+    background: url(/dist/img/right-content-item-active.png) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -207,7 +207,7 @@ body {
 .top-right .top-right-list .top-right-list-item {
     width: 9.625rem;
     height: 3.25rem;
-    background: url(/echarts/img/top-right-list-item.png);
+    background: url(/dist/img/top-right-list-item.png);
     background-size: 100% 100%;
     text-align: center;
     font-size: .75rem;
