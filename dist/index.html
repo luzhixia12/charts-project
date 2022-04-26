@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/echarts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 头部内容 -->
+        <div class="top">
+            <div class="title">
+                <div class="title-bg"></div>
+            </div>
+            <nav class="nav">
+                <div class="item-bg item-bg-left"></div>
+                <div class="nav-list"></div>
+                <div class="item-bg item-bg-right"></div>
+        </div>
+        <!-- 图表内容 -->
+        <div class="echarts-box">
+            <!-- 上左图表 -->
+            <div class="top-left">
+                <div class="echarts-title top-left-title">窗口统计</div>
+                <div class="echarts-content top-left-content flex">
+                    <div class="left-content" id="top_left"></div>
+                    <div class="right-content">
+                        <div class="right-content-title">服务事项</div>
+                        <div class="right-content-item active">事项一</div>
+                        <div class="right-content-item">事项二</div>
+                        <div class="right-content-item">事项三</div>
+                        <div class="right-content-item">事项四</div>
+                        <div class="right-content-item">事项五</div>
+                        <div class="right-content-item">事项六</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 下拉框 -->
+            <div class="select_box" style="font-size: 18.684px; color: rgb(255, 255, 255);">
+                <span>▎<span class="select-text"> 请选择</span> </span>
+                <span class="iconfont select-title-icon icon-down"
+                    style="font-size: 18.684px; color: rgb(255, 255, 255);" onclick="select_icon_click()"></span>
+                <div class="select-content" style=" display: none;"></div>
+            </div>
+            <!-- 上中图表 -->
+            <div class="top-center" id="top_center"></div>
+            <!-- 上右图表 -->
+            <div class="top-right">
+                <div class="echarts-title top-right-title">分布统计</div>
+                <div class="echarts-content">
+                    <div id="top_right"></div>
+                    <div class="top-right-list">
+                        <div class="top-right-list-item">
+                            <p>区域一</p>
+                            <p>52,630,045</p>
+                        </div>
+                        <div class="top-right-list-item">
+                            <p>区域二</p>
+                            <p>52,630,045</p>
+                        </div>
+                        <div class="top-right-list-item">
+                            <p>区域三</p>
+                            <p>52,630,045</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 下左图表 -->
+            <div class="bottom-left">
+                <div class="echarts-title">业务时长</div>
+                <div class="echarts-content bottom-left-content flex">
+                    <div class="left-content" id="bottom_left1"></div>
+                    <div class="right-content" id="bottom_left2"></div>
+                </div>
+            </div>
+            <!-- 下中图表 -->
+            <div class="bottom-center" id="bottom_center"></div>
+            <!-- 下右图表 -->
+            <div class="bottom-right">
+                <div class="echarts-title">大厅检测</div>
+                <div class="echarts-content" id="bottom_right"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+
+<script>
+    $('.title-bg').html('数据可视化')
+    getHtmlList('.nav-list', ['内容一', '内容二', '内容三', '内容四', '内容五'], 'list-item')
+    top_left_initChart()
+    top_center_initChart()
+    top_right_initChart()
+    bottom_left1_initChart()
+    bottom_left2_initChart()
+    bottom_center()
+    bottom_right_initChart()
+</script>
+
+</html>
